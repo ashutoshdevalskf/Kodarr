@@ -14,8 +14,123 @@
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
     <style>
-        .fbox{
+        .fbox {
             margin: 1rem 4rem;
+        }
+
+        .topb {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background: #333;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .topb .row {
+            position: relative;
+            width: 100%;
+            top: -50%;
+            display: flex;
+            padding: 10px 0;
+            white-space: nowrap;
+            font-size: 64px;
+            transform: rotate(-30deg);
+
+        }
+
+
+
+
+
+
+        .fab {
+            color: rgba(0, 0, 0, 0.5);
+            transition: 0.7s;
+            padding: 0px 5px;
+            user-select: none;
+            cursor: default;
+
+        }
+
+        .fab:hover {
+            transition: 0s;
+            color: red;
+            text-shadow: 0 0 120px red;
+        }
+
+
+
+        .topb .row div {
+            font-size: 1em;
+            white-space: nowrap;
+            animation: animate1 80s linear infinite;
+            animation-delay: -80s;
+
+        }
+
+        .topb .row div:nth-child(2) {
+            animation: animate2 80s linear infinite;
+            animation-delay: -40s;
+        }
+
+        @keyframes animate1 {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        @keyframes animate2 {
+            0% {
+                transform: translateX(0%);
+            }
+
+            100% {
+                transform: translateX(-200%);
+            }
+        }
+
+
+        .topb .row:nth-child(even) div {
+            font-size: 1em;
+            white-space: nowrap;
+            animation: animate3 80s linear infinite;
+            animation-delay: -80s;
+
+        }
+
+        .topb .row:nth-child(even) div:nth-child(2) {
+            animation: animate4 80s linear infinite;
+            animation-delay: -40s;
+        }
+
+        @keyframes animate3 {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+        @keyframes animate4 {
+            0% {
+                transform: translateX(-200%);
+            }
+
+            100% {
+                transform: translateX(0%);
+            }
+        }
+
+        @media (max-width:1000px) {
+
         }
     </style>
 
@@ -68,7 +183,7 @@
 
     <!-- home section starts  -->
 
-    <section class="home" id="home">
+    <!-- <section class="home" id="home">
 
         <div class="content ">
             <h3 class=>Hello There! Have a look around!</h3>
@@ -88,8 +203,1529 @@
             <video src="images/vid-1.mp4" id="video-slider" loop autoplay muted></video>
         </div>
 
-    </section>
+    </section> -->
+    <section class="topb home" id="#home">
+        <div class="content ">
+            <h3 class=>Hello There! Have a look around!</h3>
+            <p class="pageline">Know more about me on LinkedIn</p>
+            <a href="https://www.linkedin.com/in/ashutosh-deval-14b62919b/" target="_blank" class="btn">Connect</a>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
 
+            </div>
+
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+            <div>
+                <i class="fab fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-branch"></i>
+                <i class="fab fa-solid fa-sitemap"></i>
+                <i class="fab fa-solid fa-window-restore"></i>
+                <i class="fab fas fa-solid fa-code"></i>
+                <i class="fab fa-solid fa-code-pull-request"></i>
+                <i class="fab fa-solid fa-microchip"></i>
+                <i class="fab fa-solid fa-plane"></i>
+                <i class="fab fa-brands fa-node-js"></i>
+                <i class="fab fa-solid fa-share-nodes"></i>
+                <i class="fab fa-brands fa-hashnode"></i>
+                <i class="fab fa-solid fa-laptop-code"></i>
+                <i class="fab fa-solid fa-message-code"></i>
+                <i class="fab fa-solid fa-user-secret"></i>
+                <i class="fab fa-solid fa-folder-open"></i>
+                <i class="fab fa-solid fa-shield"></i>
+                <i class="fab fa-solid fa-code-commit"></i>
+                <i class="fab fa-solid fa-barcode"></i>
+                <i class="fab fa-solid fa-meteor"></i>
+                <i class="fab fa-solid fa-masks-theater"></i>
+                <i class="fab fa-solid fa-shield-halved"></i>
+                <i class="fab fa-solid fa-circle-nodes"></i>
+
+            </div>
+
+        </div>
+
+    </section>
     <!-- home section ends -->
 
     <!-- book section starts  -->
@@ -135,7 +1771,7 @@
                 <h3>JavaScript</h3>
             </div>
             <div class="box">
-                <i class="fas fa- fa-n"></i>
+                <i class="fas fa-brands fa-n"></i>
 
                 <h3>Node.js</h3>
             </div>
@@ -241,17 +1877,17 @@
 
 
                         <div class="name-profession">
-                            
+
                             <span class="name">LinkedIn</span>
                             <span class="profession">Click below to connect to my LinkedIn.</span>
                         </div>
 
 
                         <a href="https://www.linkedin.com/in/ashutosh-deval-14b62919b/" target="_blank">
-                                
+
                             <div class="button">
-    
-                                <button class="hireMe" >Connect</button>
+
+                                <button class="hireMe">Connect</button>
                             </div>
                         </a>
                     </div>
@@ -273,7 +1909,7 @@
                         <a href="https://github.com/ashutoshdevalskf" target="_blank">
 
                             <div class="button">
-    
+
                                 <button class="hireMe">Connect</button>
                             </div>
                         </a>
@@ -295,7 +1931,7 @@
                         <a href="https://www.codechef.com/users/ashutosh_deval" target="_blank">
 
                             <div class="button">
-    
+
                                 <button class="hireMe">View</button>
                             </div>
                         </a>
@@ -318,7 +1954,7 @@
 
                         <a href="https://twitter.com/AshutoshDeval12" target="_blank">
                             <div class="button">
-    
+
                                 <button class="hireMe">Connect</button>
                             </div>
 
@@ -343,7 +1979,7 @@
 
 
                         <a href="https://www.instagram.com/konashutosh/" target="_blank">
-                        <div class="button">
+                            <div class="button">
                                 <button class="hireMe">Connect</button>
 
                             </div>
@@ -368,7 +2004,7 @@
                         <a href="https://mail.google.com/mail/" target="_blank">
 
                             <div class="button">
-    
+
                                 <button class="hireMe">Mail</button>
                             </div>
                         </a>
@@ -436,15 +2072,15 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quas magni pariatur est
                     accusantium voluptas enim nemo facilis sit debitis.</p>
             </div>
-            
+
             <div class="box fbox">
                 <h3>quick links</h3>
                 <a href="#">home</a>
                 <a href="#skills">skills</a>
                 <a href="#projects">projects</a>
-                
+
                 <a href="#socials">socials</a>
-                
+
                 <a href="#contact">contact</a>
             </div>
             <div class="box fbox">
@@ -475,13 +2111,13 @@
 
     <!-- Initialize Swiper -->
     <script>
-        var spv =1;
+        var spv = 1;
         let width = screen.availWidth;
-        if(width>1300){
-                spv=2;
+        if (width > 1300) {
+            spv = 2;
         }
         var swiper = new Swiper(".mySwiper", {
-            
+
             slidesPerView: spv,
             spaceBetween: 50,
             slidesPerGroup: spv,
@@ -503,6 +2139,7 @@
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/4b71c0a9ba.js" crossorigin="anonymous"></script>
+
     <!-- custom js file link  -->
     <script src="js/script.js"></script>
 
