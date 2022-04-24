@@ -56,8 +56,8 @@
 
         .fab:hover {
             transition: 0s;
-            color: red;
-            text-shadow: 0 0 120px red;
+            color: rgb(255, 0, 0);
+            text-shadow: 0 0 120px rgb(255, 0, 0);
         }
 
 
@@ -129,9 +129,46 @@
             }
         }
 
-        @media (max-width:1000px) {
+        
 
+
+        body {
+            background-color: #333;
         }
+
+        
+
+        .element{
+            position:inherit !important;
+        }
+
+        /* Applying CSS to sphere */
+        .tagcloud {
+           
+            /* left: 32%; */
+            margin: auto;
+            font-weight: bold;
+            letter-spacing: 1px;
+            font-family: 'Nunito', sans-serif;
+            font-size: 3rem;
+        }
+
+        /* Change color of each text in sphere on hover   */
+        .tagcloud--item:hover {
+            color: #ff0000;
+            text-shadow: 0 0 120px rgb(255, 0, 0);
+        }
+        @media (max-width:1000px) {
+            .tagcloud {
+           
+           /* left: 32%; */
+           margin: auto;
+           font-weight: bold;
+           letter-spacing: 1px;
+           font-family: 'Nunito', sans-serif;
+           font-size: 1rem;
+       }
+        }    
     </style>
 
 </head>
@@ -1739,7 +1776,7 @@
 
     <!-- services section starts  -->
 
-    <section class="services" id="skills">
+    <section class="services spbox" id="skills">
 
         <h1 class="heading">
             <span>s</span>
@@ -1751,40 +1788,11 @@
 
         </h1>
 
-        <div class="box-container">
-
-            <div class="box">
-                <i class="fas fa-solid fa-code"></i>
-                <h3>HTML</h3>
-
+        
+            <div class="Sphere">
+    
             </div>
-            <div class="box">
-                <i class="fas fa-solid fa-file-code"></i>
-                <h3>CSS</h3>
-
-            </div>
-            <div class="box">
-
-
-
-                <i class="fas fa-solid fa-j"></i>
-                <h3>JavaScript</h3>
-            </div>
-            <div class="box">
-                <i class="fas fa-brands fa-n"></i>
-
-                <h3>Node.js</h3>
-            </div>
-            <div class="box">
-                <i class="fas fa-solid fa-b"></i>
-                <h3>Bootstrap</h3>
-            </div>
-            <div class="box">
-                <i class="fas fa-solid fa-c"></i>
-                <h3>C++/DSA</h3>
-            </div>
-
-        </div>
+        </section>
 
     </section>
 
@@ -2108,13 +2116,15 @@
 
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"> </script>
     <!-- Initialize Swiper -->
     <script>
         var spv = 1;
+        var spw = 150;
         let width = screen.availWidth;
         if (width > 1300) {
             spv = 2;
+            spw = 400;
         }
         var swiper = new Swiper(".mySwiper", {
 
@@ -2132,6 +2142,40 @@
                 prevEl: ".swiper-button-prev",
             },
         });
+
+        
+        
+
+        const Texts = [
+            'HTML', 'CSS', 'JAVASCRIPT',
+            'C++', 'NODE.JS', 'REACT.JS',
+            'PYTHON', 'C', 
+            'OOPs', 'EDITING',
+            'DSA', 'NODE.JS', 'BOOTSTRAP',
+            'EXPRESS', 'MYSQL', 'JQUERY', 'JAVA'
+        ];
+
+        var tagCloud = TagCloud('.Sphere', Texts, {
+
+            // Sphere radius in px
+            radius: spw,
+
+            // animation speed
+            // slow, normal, fast
+            maxSpeed: 'normal',
+            initSpeed: 'fast',
+
+            // Rolling direction [0 (top) , 90 (left), 135 (right-bottom)] 
+            direction: 135,
+
+            // interaction with mouse or not [Default true (decelerate to rolling init speed, and keep rolling with mouse).]
+            keep: true
+
+        });
+
+        // Giving color to each text in sphere
+        var color = '#ff0000 ';
+        document.querySelector('.Sphere').style.color = color;
     </script>
 
 
